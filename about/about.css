@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: #090422;
+    align-items: center;   
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.about{
+    flex: 20%;
+    margin-left: 10%;
+}
+.about h1{
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.menu{
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 16px;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+   /* background: gray;*/
+    justify-content: center;
+    align-items: center;
+    padding: 350px;
+}
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 19px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color: black;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
