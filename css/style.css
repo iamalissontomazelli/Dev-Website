@@ -194,4 +194,8 @@ b {
     header{
       display: none;
     }
+    #buttom{
+      display: none;
+      align-items: end;
+    }
 }
