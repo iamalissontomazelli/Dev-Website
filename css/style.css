@@ -180,14 +180,18 @@ b {
   right: 5px;
 }
 @media screen and(max-width:900px){
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    nav .logo{
+      font-size: 5px;
+      height: 1px;
+    }
     .menu{
-        display: block;
-        justify-content: right;
+      display: inline-flex;
     }
-    .menu a{
-        display: block;
-    }
-    .header{
-        padding-top: 50px;
+    header{
+      display: none;
     }
 }
