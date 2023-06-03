@@ -2,88 +2,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
-}
-body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+
+
 .navbar {
   display: flex;
-  flex-flow: row wrap;
-  height: 100px;
+  height: 20vh;
   background: white;
-  justify-content: center;
   align-items: center;
-  position: fixed;
   width: 100%;
+  padding: 1% 3%;
 }
+
 .logo {
-  flex: 20%;
-  margin-left: 10%;
-  /* border: 1px solid red; */
-  text-align: left;
+  flex: 50%;
+  justify-self: start;
 }
-.logo h1 {
+
+.titleLogo {
   font-family: "Poppins", sans-serif;
   color: black;
-  font-size: 40px;
+  font-size: 2.2em;
 }
+
 .menu {
+  display: flex;
+  justify-content: end;
   flex: 70%;
-  /* border: 1px solid green; */
-  text-align: right;
   padding: 20px;
+  column-gap: 2%;
 }
+
 .menu a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 16px;
+  font-size: 1.2em;
   transition: 0.1s ease-in-out;
 }
+
 .menu a:hover {
   color: #00dfc0;
-  border-top: 4px solid #180f4a;
+  border-top: 2px solid #180f4a;
 }
-#buttom {
-  background: black;
-  padding: 10px 25px;
-  color: white;
-  border-radius: 5px;
-  margin-right: 10%;
-  margin-left: 5%;
-  transition: 0.5s ease-in-out;
-}
-#buttom:hover {
-  border: none;
-  background: #00dfc0;
-  color: black;
-}
-.header {
-  display: flex;
-  flex-flow: row wrap;
-  height: auto;
-  /* background: gray; */
-  justify-content: center;
-  align-items: center;
-  padding: 150px;
-}
+
 .headline {
-  flex: 40%;
-  margin-left: 10%;
-  /* border: 1px solid black; */
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.headline h2 {
-  font-weight: 900;
-  font-size: 20px;
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  flex: 50%;
+  row-gap: 20px;
+}
+
+.title {
+  font-size: 5em;
+}
+
+.subtitle {
   color: black;
-  padding: 0;
-  margin: 0;
+  font-size: 2em;
 }
-.headline p {
-  color: gray;
-  text-align: left;
+
+.imgBox {
+  flex: 50%;
 }
-.contact-btn {
+
+.imgBox img {
+  width: 100%;
+  height: auto;
+}
+
+.github-btn {
+  width: 130px;
+  text-align: center;
   display: inline-block;
   background: black;
   padding: 20px;
@@ -93,49 +97,57 @@ body {
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
-.contact-btn:hover {
+.github-btn:hover {
   border: none;
   background: #00dfc0;
   color: black;
 }
+
 .img-headline {
-  margin-right: 10%;
-  flex: 40%;
-  /* border: 1px solid deeppink; */
-  text-align: center;
+  flex: 50%;
 }
-section {
-  display: inline-block;
-  margin-top: 80px;
-  /* border: 1px solid black; */
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 5%;
-  text-align: center;
-  /* width: 90%; */
+.img-headline img {
+    max-width: 80%;
 }
-section h2 {
+.website {
+  margin-top: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25%;
+}
+.website h2 {
+  margin-bottom: 7%;
   width: 100%;
-  font-size: 50px;
-  margin: 0;
+  font-size: 3.5em;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #00dfc0;
 }
 .service {
-  display: inline-block;
-  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
 }
 .card {
-  display: inline-block;
-  width: 30%;
-  padding: 80px;
-  margin: 1%;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #00dfc0;
   border-radius: 15px;
   cursor: pointer;
+  transition: .2s ease-in-out;
   align-items: center;
+  justify-content: center;
+  padding: 2% 1%;
+  row-gap: 20px;
 }
+
 .card:hover {
   background: #00dfc0;
   color: white;
@@ -154,48 +166,91 @@ section h2 {
   display: none;
   transition: 0.3s ease-in-out;
 }
+
 footer {
-  margin-top: 100px;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 35vh;
+  width: 100vw;
   background-image: linear-gradient(180deg, black, #090422, black);
-  text-align: center;
   border-top: 5px solid #00dfc0;
   color: white;
 }
+
 .logo-footer {
-  padding: 100px;
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 15px;
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.text-white {
+  font-size: 1.5em;
+  color: white;
+}
+
 .agency {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 34px;
+  font-size: 2em;
 }
-b {
+
+.jobRole {
+  margin-top: -10px;
+}
+
+.copyright {
   color: white;
+  font-size: 0.8em;
 }
-.whats {
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
-@media screen and(max-width:900px){
-    nav {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    nav .logo{
-      font-size: 5px;
-      height: 1px;
-    }
-    .menu{
-      display: inline-flex;
-    }
-    header{
-      display: none;
-    }
-    #buttom{
-      display: none;
-      align-items: end;
-    }
+
+
+@media screen and (max-width: 1500px) {
+ 
+  .titleLogo {
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+
+  .headline {
+    padding: 5%;
+  }
+
+  .textBox {
+    align-items: start;
+    justify-content: start;
+  }
+  
+  .headline .title {
+    font-size: 2.5em;
+  }
+
+  .headline .subtitle {
+    font-size: 1.3rem;
+  } 
+
+  .github-btn {
+    white-space: nowrap;
+    font-size: 0.9em;
+    width: 95px;
+  }
+
+  .website {
+    padding: 0 15px;
+  }
+
+  .website h2 {
+    font-size: 2.2rem;
+  }
 }

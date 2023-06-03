@@ -7,32 +7,39 @@
     <meta name="keywords" content="Developer Alisson Portifolio">
     <!-- Css link  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- BootstrapIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <title>Alisson Developer Fullstack</title>
 </head>
 <body> 
     <!-- NavBar  -->
     <nav class="navbar">
         <div class="logo">
-            <h1>Alisson Tomazelli</h1>
+            <h1 class="titleLogo">Alisson Tomazelli</h1>
         </div>
         <div class="menu">
             <a href="#">Home</a>
             <a href="about/about.html">About me</a>
             <a href="project/projects.html">Projects</a>
-            <a id="buttom" href="https://github.com/iamalissontomazelli" target="_blank">Github</a>
+            <!--<a id="buttom" href="https://github.com/iamalissontomazelli" target="_blank">Github</a>-->
         </div>
     </nav>
     <header class="header">
         <div class="headline">
-            <h2 style="font-size: 80px;">Welcome</h2>
-            <h2 style="letter-spacing: 10px;">To my first portfolio  website.</h2>
-            <a href="https://api.whatsapp.com/send?phone=351932438002&text=Thanks%20for%20contact%20us" target="_blank" class="contact-btn">Talk Now</a>
-        </div>
-        <div class="img-headline">
-            <img style="max-width: 110%;" src="img/img-headline.jpg">
+            <div class="textBox">
+                <h2 class="title">Welcome</h2>
+                <h4 class="subtitle">To my first portfolio  website.</h4>
+            <a href="https://github.com/iamalissontomazelli" target="_blank" class="github-btn">Git hub</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/img-headline.jpg">
+            </div>
         </div>
     </header>
-    <section>
+    <section class="website">
         <h2>What we can do for your business?</h2>
         <div class="service">
             <div class="card">
@@ -41,6 +48,7 @@
                 <h3>Website Develpment</h3>
                 <p>I build accessible, inclusive products and digital experiences for the web.</p>
             </div>
+            <!-- Texto do verso -->
             <div class="card-text-2">
                 <h3>We develop what you need</h3>
                 <p>I am looking for the first job opportunity</p>
@@ -48,10 +56,12 @@
             </div>
             <div class="card">
                 <img src="img/mobile-development.png" alt="app">
+                <!-- Texto do verso -->
                 <div class="card-text">
                 <h3>Apps Develpment</h3>
                 <p>Still improving studies for app creation.</p>
             </div>
+            <!-- Texto do verso -->
             <div class="card-text-2">
                 <h3>Ease in everyday life</h3>
                 <p>Still improving studies for app creation.</p>
@@ -70,15 +80,31 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="logo-footer">
-        <h1 class="agency">Alisson S. A. Tomazelli</h1>
-        <p>Developer Fullstack</p>
+<footer>
+    <div class="logo-footer">
+         <h1 class="agency">Alisson S. A. Tomazelli</h1>
+         <p class="jobRole">Developer Fullstack</p>
+
+         <div class="links">
+            <a class="btn btn-outline-light btn-floating m-1 buttonBorder" href="https://api.whatsapp.com/send?phone=351932438002&text=Thanks%20for%20contact%20us" target="_blank" role="button"
+                ><i class="bi bi-whatsapp text-white"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1 buttonBorder" href="https://www.linkedin.com/in/alisson-soares-alves-tomazelli-10a9354a/" target="_blank" role="button"
+                ><i class="bi bi-linkedin text-white"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1 buttonBorder" href="https://github.com/iamalissontomazelli" target="_blank" role="button"
+                ><i class="bi bi-github text-white"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1 buttonBorder" href="https://www.instagram.com/iamalissontomazelli/" target="_blank" role="button"
+                ><i class="bi bi-instagram text-white"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1 buttonBorder" href="mailto:alissonalvez@hotmail.com " target="_blank" role="button"
+                ><i class="bi bi-envelope-at text-white"></i></a>
+        </div>
+
+        <p class="copyright">© All right reserved</p>
     </div>
-    <b>© All right reserved</b>
-    </footer>
-    <a href="https://api.whatsapp.com/send?phone=351932438002&text=Thanks%20for%20contact%20us" target="_blank" class="whats">
-    <img style="width: 80px;" src="img/whatsapp.png">
-    </a>
+    
+</footer>
 </body>
 </html>
