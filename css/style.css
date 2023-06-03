@@ -215,7 +215,10 @@ footer {
   font-size: 0.8em;
 }
 
+/* Media Screen */
+@media screen and (max-width: 450px) {
 
+}
 @media screen and (max-width: 1500px) {
  
   .titleLogo {

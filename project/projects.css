@@ -8,7 +8,6 @@
 body {
   margin: 0;
   background: gray;
-
 }
 .navbar {
   display: flex;
@@ -30,160 +29,163 @@ body {
   font-size: 30px;
 }
 .menu {
-  flex: 70%;
-  text-align: right;
-  padding: 20px;
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    padding: 20px 16px;
+  }
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
-.menu a {
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card1 {
+  background: url(./image/p1.png) center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url(./image/p1.png) left center no-repeat;
+  background-size: 600px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .g {
+  opacity: 1;
+}
+
+.card2 {
+  background: url(./image/p2.png) center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url(./image/p2.png) left center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .g {
+  opacity: 1;
+}
+.card3 {
+  background: url(./image/p3.png) center center no-repeat;
+  background-size: 300px;
+}
+.card3:hover {
+  background: url(./image/p3.png) left center no-repeat;
+  background-size: 600px;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+.card3:hover .g {
+  opacity: 1;
+}
+
+.card4 {
+  background: url(./image/p4.jpg) center center no-repeat;
+  background-size: 300px;
+}
+.card4:hover {
+  background: url(./image/p4.jpg) left center no-repeat;
+  background-size: 600px;
+}
+.card4:hover h2 {
+  opacity: 1;
+}
+.card4:hover .g {
+  opacity: 1;
+}
+
+h2 {
+  color: #fff;
+  margin-left: 20px;
+  opacity: 0;
+  transition: opacity 1s;
   text-decoration: none;
-  color: whitesmoke;
-  font-family: "Poppins", sans-serif;
-  padding: 20px 16px;
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+h2 a {
+  text-decoration: none;
+  color: white;
 }
-.border{
-    height: 369px;
-    width: 290px;
-    background: transparent;
-    border-radius: 10px;
-    transition: border 1s;
-    position: relative;
+.g {
+  opacity: 0;
+  transition: opacity 1s;
 }
-.border:hover{
-    border: 1px solid #fff;
+.text {
+  position: absolute;
+  margin-left: 10px;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.card{
-    height: 379px;
-    width: 300px;
-    background: #808080;
-    border-radius: 10px;
-    transition: background 0.8s;
-    overflow: hidden;
-    background: #000;
-    box-shadow: 0 70px 63px -60px #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
+.textb {
+  position: absolute;
+  margin-left: 10px;
+  color: #000;
+  font-style: initial;
+  height: 130px;
+  top: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.card{
-    height: 379px;
-    width: 300px;
-    background: #808080;
-    border-radius: 10px;
-    transition: background 0.8s;
-    overflow: hidden;
-    background: #000;
-    box-shadow: 0 70px 63px -60px #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.card1{
-    background: url(./image/p1.png) center center no-repeat;
-    background-size: 300px;
-}
-.card1:hover{
-    background: url(./image/p1.png) left center no-repeat;
-    background-size: 600px;
-}
-.card1:hover h2{
-    opacity: 1;
-}
-.card1:hover .g{
-    opacity: 1;
-}
-
-.card2{
-    background: url(./image/p2.png) center center no-repeat;
-    background-size: 300px;
-}
-.card2:hover{
-    background: url(./image/p2.png) left center no-repeat;
-    background-size: 600px;
-}
-.card2:hover h2{
-    opacity: 1;
-}
-.card2:hover .g{
-    opacity: 1;
-}
-.card3{
-    background: url(./image/p3.png) center center no-repeat;
-    background-size: 300px;
-}
-.card3:hover{
-    background: url(./image/p3.png) left center no-repeat;
-    background-size: 600px;
-}
-.card3:hover h2{
-    opacity: 1;
-}
-.card3:hover .g{
-    opacity: 1;
-}
-
-.card4{
-    background: url(./image/p4.jpg) center center no-repeat;
-    background-size: 300px;
-}
-.card4:hover{
-    background: url(./image/p4.jpg) left center no-repeat;
-    background-size: 600px;
-}
-.card4:hover h2{
-    opacity: 1;
-}
-.card4:hover .g{
-    opacity: 1;
-}
-
-h2{
-    color: #fff;
-    margin-left: 20px;
-    opacity: 0;
-    transition: opacity 1s;
-    text-decoration: none;
-}
-h2 a{
-    text-decoration: none;
-    color: white;
-}
-.g{
-    opacity: 0;
-    transition: opacity 1s;
-}
-.text{
-    position: absolute;
-    margin-left: 10px;
-    color: #fff;
-    height: 130px;
-    top: 226px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.textb{
-    position: absolute;
-    margin-left: 10px;
-    color: #000;
-    font-style: initial;
-    height: 130px;
-    top: 226px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+@media screen and (max-width: 1500px) {
+  
 }

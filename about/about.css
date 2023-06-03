@@ -1,66 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-.navbar{
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    background: #090422;
-    align-items: center;   
-    justify-content: center;
-    position: fixed;
-    width: 100%;
+.navbar {
+  display: flex;
+  height: 10vh;
+  background: #090422;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.about{
-    flex: 20%;
-    margin-left: 10%;
+.about {
+  flex: 20%;
+  margin-left: 10%;
 }
-.about h1{
-    font-family: 'Poppins', sans-serif;
-    color: whitesmoke;
-    font-size: 30px;
+.about h1 {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  font-size: 30px;
 }
-.menu{
-    flex: 70%;
-    text-align: right;
-    padding: 20px;
+.menu {
+  flex: 70%;
+  text-align: right;
+  padding: 20px;
 }
-.menu a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px 16px;
-}
-.header{
-    display: flex;
-    flex-flow: row wrap;
-    height: auto;
-   /* background: gray;*/
-    justify-content: center;
-    align-items: center;
-    padding: 350px;
-}
-.headline{
-    flex: 40%;
-    margin-left: 10%;
-    font-family: 'Poppins', sans-serif;
-}
-.headline h2{
-    font-weight: 900;
-    font-size: 19px;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-.headline p{
-    color: black;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 16px;
 }
 
+.header {
+  padding: 50px;
+  width: 100vw;
+  height: 80vh;
+}
 
+.card-header {
+  border: 3px solid #090422;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  flex: 50%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgBox {
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.textBox .name {
+  font-size: 1.8em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.text-black {
+  font-size: 1.5em;
+  color: black;
+}
+
+.right {
+  padding: 0 5%;
+  background-color: #090422;
+  flex: 50%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutText {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+  text-align: start;
+  width: 70%;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 35vh;
+  width: 100vw;
+  background-image: linear-gradient(180deg, black, #090422, black);
+  border-top: 5px solid #00dfc0;
+  color: white;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 15px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.text-white {
+  font-size: 1.5em;
+  color: white;
+}
+
+.agency {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
+.jobRole {
+  margin-top: -10px;
+}
+
+.copyright {
+  color: white;
+  font-size: 0.8em;
+}
+
+.icon-white {
+  margin-right: 5%;
+  font-size: 2.5em;
+  color: white;
+}
+@media screen and (max-width: 1500px) {
+}
